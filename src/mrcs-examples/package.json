@@ -1,0 +1,37 @@
+{
+  "name": "@MixedRealityCaptureStudios/mrcs-examples",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "copy-captures": "node ./copy-captures.js",
+    "three": "npm run copy-captures && parcel ./three-example.html",
+    "webgl": "npm run copy-captures && parcel ./webgl-example.html",
+    "r3f": "npm run copy-captures && parcel ./r3f-example.html"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MixedRealityCaptureStudios/DevKit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@MixedRealityCaptureStudios/holo-video-object": "*",
+    "@MixedRealityCaptureStudios/holo-video-object-r3f": "*",
+    "@MixedRealityCaptureStudios/holo-video-object-three": "*",
+    "@react-three/fiber": "^8.0.21",
+    "@react-three/postprocessing": "^2.3.2",
+    "fs-extra": "^10.1.0",
+    "gl-matrix": "2.4.0",
+    "leva": "^0.9.27",
+    "parcel": "^2.5.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "three": "^0.140.2"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
